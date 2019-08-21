@@ -1,0 +1,32 @@
+<!-- ko allowBindings: true -->
+<h3>Right Sidebar</h3>
+With this plugin you can position the panels between the right and left sides.<br><br>
+
+<form id="settings_plugin_right_sidebar_form" class="form-horizontal">
+    <div class="row-fluid">
+        <div class="span5"><h4>Left</h4></div>
+        <div class="span2"></div>
+        <div class="span5"><h4>Right</h4></div>
+    </div>
+    <div class="row-fluid">
+        <div class="span5">
+            <select id="setting_leftside_list" size="10" class="span12" multiple>
+            </select>
+            <input type="hidden" id="setting_leftside" data-bind="value: leftside">
+        </div>
+        <div class="span2 text-center">
+            <button id="setting_toright" type="button" data-bind="click: moveRightSide" class="btn btn-default" aria-label="Left Align">
+                <span class="fa fa-arrow-right" aria-hidden="true"></span>
+            </button><br />
+            <button id="setting_toleft" type="button" data-bind="click: moveLeftSide" class="btn btn-default" aria-label="Left Align">
+                <span class="fa fa-arrow-left" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="span5">
+            <select id="setting_rightside_list" size="10" class="span12" multiple>
+            </select>
+            <input type="hidden" id="setting_rightside" data-bind="value: rightside">
+        </div>
+    </div>    
+</form> 
+<!-- /ko -->
