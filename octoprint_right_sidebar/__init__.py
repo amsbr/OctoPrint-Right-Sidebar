@@ -40,7 +40,7 @@ class Right_SidebarPlugin(octoprint.plugin.StartupPlugin,
         
     def get_update_information(self):
         return dict(
-            systemcommandeditor=dict(
+            right_sidebar=dict(
                 displayName="Right Sidebar",
                 displayVersion=self._plugin_version,
 
